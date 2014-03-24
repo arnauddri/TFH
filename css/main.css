@@ -1,0 +1,169 @@
+/*----- OnePage Scroll Pagination ----*/
+.onepage-pagination li a:before {
+	background: none repeat scroll 0 0 rgba(88,216,215,1);
+	border-radius: 10px;
+	content: "";
+	height: 6px;
+	position: absolute;
+	width: 6px;
+}
+
+.onepage-pagination li a:hover:before{
+	background: none repeat scroll 0 0 rgb(88,216,215);
+}
+
+.onepage-pagination li a.active:before {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid rgba(88,216,215,1);
+	height: 12px;
+	left: 7px;
+	margin-top: -3px;
+	width: 12px;
+}
+
+/*------------------------------------*/
+
+
+.navbar-inverse {
+	background-color:rgba(255,255,255,0);
+	border-color:transparent;
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color:rgb(88,216,215);
+	font-family: "Garamond", EB Garamond, Georgia, serif;
+	font-size: 28px;
+	max-width: 300px
+}
+
+.navbar-inverse .navbar-brand img{
+	width: 100%
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color:rgb(88,216,215);
+	font-family: "Garamond", EB Garamond, Georgia, serif;
+	font-size: 24px;
+}
+
+.navbar-nav > li > a {
+	line-height: 80px
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #67a09f;
+}
+
+
+@media(max-width:992px){
+	.navbar-nav > li > .large-screen-link{
+		display: none;
+	}
+}
+@media(max-width:412px){
+	.navbar-nav > li > a{
+		display: none;
+	}
+	.navbar-inverse .navbar-brand img{
+		width: 60%
+	}
+}
+
+section{
+	background-image: url('../img/gradient-transparent.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
+	overflow: hidden;
+}
+
+section .container{
+	height: 100%;
+	display: table;
+}
+
+section .container .row{
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 100px;
+}
+
+section h1{
+	font-family: "Garamond", EB Garamond, Georgia, serif;
+}
+
+section p,section li{
+	font-family: "Garamond", EB Garamond, Georgia, serif;
+	font-size: 18px;
+}
+
+section .desc{
+	display: table;
+	height: 370px
+}
+
+section .desc > div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.section-title{
+	margin-bottom: 60px;
+	margin-top: -80px
+}
+
+
+#homescreen{
+	background-image: url('../img/main-bck.jpg');
+	background-size: cover;
+}
+
+#homescreen .container{
+	height: 100%;
+	min-height: 100%;
+}
+
+#home-caption{
+	margin-top: 25%;
+	font-family: "Garamond", EB Garamond, Georgia, serif;
+	color: white;
+}
+
+#home-caption h1{
+	font-family: "Garamond", EB Garamond, Georgia, serif;
+	color: white;
+	text-shadow:rgba(0, 0, 0, 0.4) 0 3px 3px;
+	font-size: 56px;
+}
+
+
+/*------Contact Modal---------*/
+#contactFormModal textarea{
+	height: 120px;
+}
+
+
+/*------Contact Button Mobile---------*/
+#contactMobile{
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	z-index: 2
+}
+
+#contactMobile div{
+	color: rgb(88,216,215);
+	font-family: "Garamond", EB Garamond, Georgia, serif;
+	font-size: 20px;
+	background-color: transparent;
+	border-color: rgb(88,216,215);
+}
+
+@media(min-width:412px){
+	#contactMobile{
+		display: none;
+	}
+}
+
