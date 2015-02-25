@@ -42,7 +42,7 @@
 }
 
 .navbar-inverse .navbar-nav > li > a {
-	color:rgb(88,216,215);
+	color:rgb(79,129,189);
 	font-family: "Garamond", EB Garamond, Georgia, serif;
 	font-size: 24px;
 }
@@ -140,6 +140,16 @@ section .desc > div{
 /*------Contact Modal---------*/
 #contactFormModal textarea{
 	height: 120px;
+}
+#confirmation-form{
+	display: none;
+}
+#confirmation-form .alert{
+	text-align: center;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px
 }
 
 

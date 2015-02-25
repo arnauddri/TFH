@@ -36,14 +36,14 @@
        $('#offre .desc > div').stop().delay( 800 ).animate({"top": '0', "opacity":"1"}, 'slow','easeOutExpo');
        $('#offre .desc > div').addClass('is-open');
      };
-     if (index===3 && !$('#technologie .desc > div').hasClass('is-open')) {
-       $('#technologie .pic img').stop().delay( 400 ).animate({"left": '0', "opacity":"1"}, 'slow','easeOutExpo');
-       $('#technologie .desc > div').stop().delay( 800 ).animate({"top": '20%', "opacity":"1"}, 'slow','easeOutExpo');
-       $('#technologie .desc > div').addClass('is-open');
+     if (index===3 && !$('#taxation .desc > div').hasClass('is-open')) {
+       $('#taxation .pic img').stop().delay( 400 ).animate({"left": '0', "opacity":"1"}, 'slow','easeOutExpo');
+       $('#taxation .desc > div').stop().delay( 800 ).animate({"top": '0%', "opacity":"1"}, 'slow','easeOutExpo');
+       $('#taxation .desc > div').addClass('is-open');
      };
      if (index===4 && !$('#finance .desc > div').hasClass('is-open')) {
        $('#finance .pic img').stop().delay( 400 ).animate({"left": '0', "opacity":"1"}, 'slow','easeOutExpo');
-       $('#finance .desc > div').stop().delay( 800 ).animate({"top": '15%', "opacity":"1"}, 'slow','easeOutExpo');
+       $('#finance .desc > div').stop().delay( 800 ).animate({"top": '0', "opacity":"1"}, 'slow','easeOutExpo');
        $('#finance .desc > div').addClass('is-open');
      };
      if (index===5 && !$('#humain .desc > div').hasClass('is-open')) {
@@ -350,7 +350,7 @@ $.fn.onepage_scroll = function(options){
       });
     }
     
-      $("#goToTechnologie").click(function (){
+      $("#goToTaxation").click(function (){
         var page_index = 3;
         if (!$(this).hasClass("active")) {
           current = $(settings.sectionContainer + ".active")

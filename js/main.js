@@ -11,20 +11,21 @@ $(document).ready(function(){
               'from_email': $('#exampleInputEmail1').val(),
               'to': [
                   {
-                    'email': 'contact@tfhcapital.com', //'contact@tfhcapital.com',
+                    'email': 'arthur.leroy.beaulieu@tfhcapital.com', //'contact@tfhcapital.com',
                     'name': 'Contact',
                     'type': 'to'
                   }
                 ],
               'autotext': 'true',
               'subject': $('#exampleInputEmail1').val() + ' from TFH Capital',
-              'html': $('#exampleInputTextarea1').val()
+              'html': 'Numero: ' + $('#phoneInput').val() + '<br><br>'+ $('#exampleInputTextarea1').val()
             }
           }
          }).done(function(response) {
-           console.log(response); // if you're into that sorta thing
+           console.log(response); 
+           $('#information-form').hide();
+           $('#confirmation-form').show();
         });
-    $('#contactFormModal').modal('toggle');
     });
 });
  // ====================================================
@@ -50,7 +51,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     $('.navbar-inverse').height($('navbar-brand').height());
 });
 
-window.onload = function(e){ 
+window.onload = function(e){
     $('#homescreen').height($(window).height());
     $('#finance .col-md-6.pic').height($('#finance .col-md-6.pic img').height());
 };
